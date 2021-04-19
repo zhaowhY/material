@@ -9,8 +9,7 @@ export default function debounce(func, delay) {
   if (timer) return;
   if (timer === null) func(); // 第一次立即执行
   timer = setTimeout(() => {
-    func()
+    func();
     timer = false;
-  }, Number(delay))
+  }, Number(delay));
 }
-

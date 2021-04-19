@@ -5,14 +5,10 @@
  */
 
 let timer = null;
-function throttle(func, delay) {
-  if (timer) clearTimeout(timer)
+export default function throttle(func, delay) {
+  if (timer) clearTimeout(timer);
 
   timer = setTimeout(() => {
-    func()
-  }, Number(delay))
+    func();
+  }, Number(delay));
 }
-
-
-
-
