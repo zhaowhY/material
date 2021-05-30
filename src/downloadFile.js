@@ -25,3 +25,8 @@ export const downloadFile = async (fileUrl, name) => {
     console.log(error);
   }
 };
+
+
+// 其他下载介绍
+// file-saver 会等文件都下载完毕之后，在弹出下载框， 无法利用浏览器自身特性，显示下载进度
+// 不用window.URL.createObjectURL, 会出现无法自定义文件名的情况，文件名为连接后缀
